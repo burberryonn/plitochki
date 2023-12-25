@@ -1,5 +1,5 @@
-import { Grid } from "./grid.js";
-import { Title } from "./title.js";
+import { Grid } from "/grid.js";
+import { Title } from "/title.js";
 
 const gameBoard = document.getElementById("game-cont");
 

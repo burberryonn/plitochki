@@ -7,7 +7,7 @@ export class Cell{
         this.y = y;
     }
 
-    linkTitle(title){
+    linkTitle(tile){
         title.setXY(this.x, this.y);
         this.linkedTitle = title;
     }

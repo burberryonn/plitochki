@@ -1,6 +1,6 @@
 import { Cell } from "/cell.js";
 
-const GRID_SIZE = 8;
+const GRID_SIZE = 4;
 const CELLS_COUNT = GRID_SIZE * GRID_SIZE;
 
 export class Grid{

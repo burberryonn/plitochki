@@ -1,16 +1,16 @@
-export class Tile {
+export class Title {
     constructor(gridElement){
-        this.tileElement = document.createElement("div");
-        this.tileElement.classList.add("title");
+        this.titleElement = document.createElement("div");
+        this.titleElement.classList.add("title");
         this.value = Math.random() > 0.5 ? 2 : 4;
-        this.tileElement.textContent = this.value;
-        gridElement.append(this.tileElement);
+        this.titleElement.textContent = this.value;
+        gridElement.append(this.titleElement);
     }
 
     setXY(x, y){
         this.x = x;
         this.y = y;
-        this.tileElement.style.setProperty("--x", x);
-        this.tileElement.style.setProperty("--y", y);
+        this.titleElement.style.setProperty("--x", x);
+        this.titleElement.style.setProperty("--y", y);
     }
 }

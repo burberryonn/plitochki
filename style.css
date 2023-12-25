@@ -14,12 +14,12 @@ body{
 
 
 #game-cont{
-    --cell-size: 20vmin;
+    --cell-size: 10vmin;
     --cell-gap: 2vmin;
     position: relative;
     display: grid;
-    grid-template-columns: repeat(4, var(--cell-size));
-    grid-template-rows: repeat(4, var(--cell-size));
+    grid-template-columns: repeat(8, var(--cell-size));
+    grid-template-rows: repeat(8, var(--cell-size));
     gap: var(--cell-gap);
     border-radius: 1vmin;
 }
@@ -39,8 +39,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20vmin;
-    height: 20vmin;
+    width: 10vmin;
+    height: 10vmin;
     border-radius: 1vmin;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 7.5vmin;

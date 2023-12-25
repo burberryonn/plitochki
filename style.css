@@ -14,7 +14,7 @@ body{
 
 
 #game-cont{
-    --cell-size: 10vmin;
+    --cell-size: 20vmin;
     --cell-gap: 2vmin;
     position: relative;
     display: grid;

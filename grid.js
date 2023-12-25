@@ -13,8 +13,8 @@ export class Grid{
     }
 
     getRandomEmptyCell(){
-        let emptyCell = this.cell.filter(cell => cell.isEmpty())
-        let randomIndex = Math.floor(Math.random() * emptyCell.length)
+        const emptyCell = this.cell.filter(cell => cell.isEmpty())
+        const randomIndex = Math.floor(Math.random() * emptyCell.length)
         return emptyCell[randomIndex]
     }
 }

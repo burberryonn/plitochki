@@ -7,12 +7,12 @@ export class Cell{
         this.y = y;
     }
 
-    linkTitle(tile){
-        tile.setXY(this.x, this.y);
-        this.linkTitle = title;
+    linkTitle(title){
+        title.setXY(this.x, this.y);
+        this.linkedTitle = title;
     }
 
     isEmpty() {
-        return !this.linkTitle;
+        return !this.linkedTitle;
     }
 }

@@ -7,12 +7,39 @@ export class Cell{
         this.y = y;
     }
 
-    linkTitle(tile){
+    linkTitle(title){
         title.setXY(this.x, this.y);
         this.linkedTitle = title;
     }
 
+    unLinkTitle(){
+        this.linkedTitle = null;
+    }
+
     isEmpty() {
         return !this.linkedTitle;
+    }
+
+    linkTitleForMerge(title){
+        title.setXY(this.x, this.y);
+        this.linkedTitleForMerge = title;
+    }
+
+    unlinkTitleForMerge(){
+        this.linkedTitleForMerge = null;
+    }
+
+    hasTitleForMerge(){
+        return !!this.linkedTitleForMerge
+    }
+
+    canAccept(newTitle){
+        return this.isEmpty() || (!this.hasTitleForMerge() && this.linkedTitle.value === newTitle.value) 
+    }
+
+    mergeTitles(){
+        this.linkedTitle.setValue(this.linkedTitle.value + this.linkedTitleForMerge.value)
+        this.linkedTitleForMerge.removeFromDOM()
+        this.unlinkTitleForMerge()
     }
 }

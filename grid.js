@@ -11,4 +11,10 @@ export class Grid{
             this.cell.push(new Cell(gridElement, index % GRID_SIZE, Math.floor(index / GRID_SIZE)))
         }
     }
+
+    getRandomEmptyCell(){
+        let emptyCell = this.cell.filter(cell => cell.isEmpty())
+        let randomIndex = Math.floor(Math.random() * emptyCell.length)
+        return emptyCell[randomIndex]
+    }
 }

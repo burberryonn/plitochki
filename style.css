@@ -5,11 +5,13 @@
 }
 
 body{
-    background-color: rgba(107, 106, 109, 0.521);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: -webkit-linear-gradient(180deg, rgb(124, 128, 127) 53%, rgb(65, 69, 69) 97%);
+    background: -moz-linear-gradient(180deg, rgb(124, 128, 127) 53%, rgb(65, 69, 69) 97%);
+    background: linear-gradient(180deg, rgb(124, 128, 127) 53%, rgb(65, 69, 69) 97%);
 }
 
 
@@ -22,11 +24,16 @@ body{
     grid-template-rows: repeat(4, var(--cell-size));
     gap: var(--cell-gap);
     border-radius: 1vmin;
+    
+    
 }
 
 .cell{
-    background-color: rgba(0, 0, 0, 0.508);
+    background-color: rgba(255, 253, 253, 0.839);
     border-radius: 1.5vmin;
+    -webkit-box-shadow: 0px 0px 50px 19px rgba(65, 70, 73, 0.26);
+    -moz-box-shadow: 0px 0px 50px 19px rgba(65, 70, 73, 0.26);
+    box-shadow: 0px 0px 40px 19px rgba(65, 70, 73, 0.26);
 
 }
 
@@ -58,3 +65,4 @@ body{
         transform: scale(0);
     }
 }
+
